@@ -12,3 +12,4 @@ install.packages("devtools")
 
 # Install virtus from GitHub
 devtools::install_github("lastonehome/virtus")
+```
