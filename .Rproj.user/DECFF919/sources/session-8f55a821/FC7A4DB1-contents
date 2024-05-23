@@ -52,7 +52,7 @@ analyze_values_with_modifiers <- function(data, text_column, dictionary_path = N
       results[i, result_colnames[j]] <- count
     }
 
-    # Calculate percentages if required or not
+    # Calculate percentages if required
     total_score <- sum(results[i, result_colnames])
     total_words <- sum(strsplit(text, "\\W+")[[1]] != "")
     if (output_type == "percentage" && total_score > 0) {
